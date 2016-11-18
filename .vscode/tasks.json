@@ -1,0 +1,15 @@
+{
+    "version": "0.1.0",
+    "command": "sh",
+    "args": ["-c"],
+    "isShellCommand": true,
+    "showOutput": "always",
+    "suppressTaskName": true,
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": ["g++ main.cpp ConcreteStateA.cpp ConcreteStateB.cpp -Wall -lpthread -g -std=c++11 -o StateMachine"],
+            "isBuildCommand": true
+        }
+    ]
+}
