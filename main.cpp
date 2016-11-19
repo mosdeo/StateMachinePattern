@@ -3,14 +3,16 @@
 #include "State.hpp"
 #include "Context.hpp"
 #include <iostream>
+#include <memory>
 using namespace std;
 
 int main(int argc, char *argv[])
 {
-	Context* c = new Context(new ConcreteStateA());
+	shared_ptr<Context> c  = make_shared<Context>(new ConcreteStateA());
 
 	c->Request();
 	c->Request();
 	c->Request();
 	c->Request();
+
 }

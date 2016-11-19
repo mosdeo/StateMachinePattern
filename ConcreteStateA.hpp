@@ -4,11 +4,12 @@
 #include "State.hpp"
 #include "Context.hpp"
 #include "ConcreteStateB.hpp"
+#include <memory>
 
 class ConcreteStateA: public State
 {
 public:
-    void Handle(Context* context);
+    void Handle(std::shared_ptr<Context> context);
 };
 
 #endif
