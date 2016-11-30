@@ -8,8 +8,9 @@
     "tasks": [
         {
             "taskName": "build",
-            "args": ["g++ main.cpp ConcreteStateA.cpp ConcreteStateB.cpp -Wall -lpthread -g -std=c++11 -o StateMachine"],
+            "args": ["g++ main.cpp LockNoBike.cpp LockHaveBike.cpp -Wall -lpthread -g -std=c++11 -o StateMachine"],
             "isBuildCommand": true
         }
     ]
 }
+

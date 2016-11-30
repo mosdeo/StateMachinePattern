@@ -9,6 +9,7 @@ class State
 {
 public:
     virtual void Handle(std::shared_ptr<Context> context) = 0;
+    
 };
 
 #endif
